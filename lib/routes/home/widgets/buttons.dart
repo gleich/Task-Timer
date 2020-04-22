@@ -11,6 +11,7 @@ class _AddButtonState extends State<AddButton> {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = MediaQuery.of(context).platformBrightness;
     return MouseRegion(
       onEnter: (_) {
         setState(() {
@@ -23,11 +24,15 @@ class _AddButtonState extends State<AddButton> {
         });
       },
       child: CircleAvatar(
-        backgroundColor: mouseHovering ? Colors.white : Colors.green,
+        backgroundColor: mouseHovering
+            ? brightness == Brightness.light ? Colors.black : Colors.white
+            : Colors.green,
         maxRadius: 35,
         child: Icon(
           Icons.add,
-          color: mouseHovering ? Colors.black : Colors.white,
+          color: mouseHovering
+              ? brightness == Brightness.light ? Colors.white : Colors.black
+              : Colors.white,
           size: 50,
         ),
       ),

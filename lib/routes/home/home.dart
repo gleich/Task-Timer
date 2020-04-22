@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 // Project imports:
 import 'package:task_timer/routes/home/widgets/buttons.dart';
+import 'package:task_timer/routes/home/widgets/clock.dart';
 
 class HomeRoute extends StatelessWidget {
   static const routeName = '/blankTasks';
@@ -11,7 +12,16 @@ class HomeRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: AddButton(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Clock(),
+            const SizedBox(
+              height: 70,
+            ),
+            AddButton(),
+          ],
+        ),
       ),
     );
   }
