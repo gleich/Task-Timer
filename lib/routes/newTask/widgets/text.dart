@@ -13,7 +13,6 @@ class StepTitle extends StatelessWidget {
       style: TextStyle(
         fontSize: 100,
         decoration: TextDecoration.underline,
-        fontFamily: 'Tomorrow',
       ),
     );
   }

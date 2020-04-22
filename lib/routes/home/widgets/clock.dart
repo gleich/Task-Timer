@@ -39,10 +39,7 @@ class _ClockState extends State<Clock> {
   Widget build(BuildContext context) {
     return Text(
       _timeString,
-      style: TextStyle(
-        fontSize: 100,
-        fontFamily: 'Tomorrow',
-      ),
+      style: TextStyle(fontSize: 100),
     );
   }
 }
