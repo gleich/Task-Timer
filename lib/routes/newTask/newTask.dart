@@ -1,7 +1,7 @@
-// Flutter imports:
+// 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports:
+// 🌎 Project imports:
 import 'package:task_timer/routes/newTask/name.dart';
 
 class NewTaskRoute extends StatelessWidget {

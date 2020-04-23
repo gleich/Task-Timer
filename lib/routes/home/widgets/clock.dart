@@ -1,10 +1,10 @@
-// Dart imports:
+// 🎯 Dart imports:
 import 'dart:async';
 
-// Flutter imports:
+// 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
+// 📦 Package imports:
 import 'package:intl/intl.dart';
 
 class Clock extends StatefulWidget {

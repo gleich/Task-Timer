@@ -1,10 +1,10 @@
-// Dart imports:
+// 🎯 Dart imports:
 import 'dart:io';
 
-// Flutter imports:
+// 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports:
+// 🌎 Project imports:
 import 'package:task_timer/routes/newTask/category.dart';
 import 'package:task_timer/routes/newTask/widgets/text.dart';
 

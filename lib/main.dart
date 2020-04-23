@@ -1,7 +1,7 @@
-// Flutter imports:
+// 📱 Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports:
+// 🌎 Project imports:
 import 'package:task_timer/routes/home/home.dart';
 import 'package:task_timer/routes/newTask/newTask.dart';
 import 'package:task_timer/themes.dart';

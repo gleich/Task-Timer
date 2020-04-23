@@ -8,7 +8,7 @@ dependencies:
   flutter:
     sdk: flutter
 dev_dependencies:
-  import_sorter: '^1.0.4'
+  import_sorter: '^1.0.7'
   local_google_fonts: '^1.0.8'
   flutter_test:
     sdk: flutter
