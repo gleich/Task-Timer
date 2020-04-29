@@ -14,21 +14,24 @@ class Clock extends StatefulWidget {
 
 class _ClockState extends State<Clock> {
   String _timeString;
+  Timer _timer;
 
   @override
   void initState() {
     _timeString = _getCurrentTime();
-    Timer.periodic(
+    _timer = Timer.periodic(
       const Duration(seconds: 1),
-      (Timer t) => _updateTime(_getCurrentTime()),
+      (Timer t) => setState(() {
+        _timeString = _getCurrentTime();
+      }),
     );
     super.initState();
   }
 
-  void _updateTime(String time) {
-    setState(() {
-      _timeString = _getCurrentTime();
-    });
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
   }
 
   String _getCurrentTime() {
